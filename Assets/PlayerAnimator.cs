@@ -21,8 +21,8 @@ public class PlayerAnimator : MonoBehaviour
     {
         _txtState.text = GetStateAsText();
         _animator.SetBool(isWalkingKey, _player.IsWalking);
-        _animator.SetInteger("VerDir", (int)_player.MoveDir.y);
-        _animator.SetInteger("HorDir", (int)_player.MoveDir.x);
+        _animator.SetFloat("Vertical", (int)_player.MoveDir.y);
+        _animator.SetFloat("Horizontal", (int)_player.MoveDir.x);
     }
 
     private string GetStateAsText ()
