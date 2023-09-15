@@ -798,6 +798,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sr: {fileID: 717722888}
+  Dialogos: []
 --- !u!58 &717722887
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -913,6 +914,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sr: {fileID: 760081006}
+  Dialogos:
+  - Waos
 --- !u!58 &760081005
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1139,6 +1142,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sr: {fileID: 814757906}
+  Dialogos:
+  - Hola
+  - Soy Sebas
 --- !u!58 &814757905
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1778,6 +1784,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sr: {fileID: 1581406232}
+  Dialogos: []
 --- !u!1 &1751907116
 GameObject:
   m_ObjectHideFlags: 0
@@ -2078,6 +2085,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sr: {fileID: 1835613215}
+  Dialogos:
+  - Never Gonna Give You Up
+  - Never Gonna Let You Down
 --- !u!58 &1835613214
 CircleCollider2D:
   m_ObjectHideFlags: 0
