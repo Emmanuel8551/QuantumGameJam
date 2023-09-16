@@ -11,7 +11,6 @@ public class DialogManager : MonoBehaviour
     private string _targetText;
     private float _charCount;
     private List<string> Dialogos = new();
-    private bool isWriting;
 
     private void Start()
     {
@@ -22,34 +21,33 @@ public class DialogManager : MonoBehaviour
     {
         if (panel.activeSelf)
         {
-            if (txtMessage.text == _targetText)
+            if (txtMessage.text != _targetText)
             {
-                isWriting = false;
+                _charCount = Mathf.Min(_charCount + Time.deltaTime * 60, _targetText.Length);
+                txtMessage.text = _targetText.Substring(0, (int)_charCount);
             }
-            _charCount = Mathf.Min(_charCount + Time.deltaTime * 60, _targetText.Length);
-            txtMessage.text = _targetText.Substring(0, (int)_charCount);
+
         }
 
         if (Input.GetKeyDown(KeyCode.Return))
         {
-            if (Dialogos.Count <= 0 && !isWriting)
+            if(txtMessage.text != _targetText)
             {
-                Hide();
-            }
-            else if(Dialogos.Count > 0)
+                txtMessage.text = _targetText;
+            }else if (Dialogos.Count > 0)
             {
                 ShowText();
             }
             else
             {
-                txtMessage.text = _targetText;
+                Hide();
             }
         }
     }
 
     public void ShowText ()
     {
-        isWriting = true;
+        txtMessage.text = "";
         string text;
         if (Dialogos.Count > 0)
         {
@@ -62,7 +60,7 @@ public class DialogManager : MonoBehaviour
         }
         _charCount = 0;
         Show();
-        _targetText = text;
+        _targetText = text+"      ";
     }
 
     public void Show ()

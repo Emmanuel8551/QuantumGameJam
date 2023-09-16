@@ -1784,7 +1784,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sr: {fileID: 1581406232}
-  Dialogos: []
+  Dialogos:
+  - FUNCIONA??
 --- !u!1 &1751907116
 GameObject:
   m_ObjectHideFlags: 0

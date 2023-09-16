@@ -26,13 +26,28 @@ public class PlayerMovement : MonoBehaviour
             _rb.velocity = Vector3.zero;
         }
         else
-        {      
-            if (Input.GetKey(KeyCode.UpArrow)) moveDir.y = 1;
-            else if (Input.GetKey(KeyCode.DownArrow)) moveDir.y = -1;
-        
-            else if (Input.GetKey(KeyCode.RightArrow)) moveDir.x = 1;
-            else if (Input.GetKey(KeyCode.LeftArrow)) moveDir.x = -1;
+        {
+            int dir = 0;
+            if (Input.GetKey(KeyCode.UpArrow)) dir+=3;
+            if (Input.GetKey(KeyCode.DownArrow)) dir+=4;
+            if (Input.GetKey(KeyCode.RightArrow)) dir+=5;
+            if (Input.GetKey(KeyCode.LeftArrow)) dir+=6;
 
+            switch (dir)
+            {
+                case 3:
+                    moveDir.y = 1;
+                    break;
+                case 4:
+                    moveDir.y = -1;
+                    break;
+                case 5:
+                    moveDir.x = 1;
+                    break;
+                case 6:
+                    moveDir.x = -1;
+                    break;
+            }
             moveDir.Normalize();
             _rb.velocity = moveDir * _speed;
         }
