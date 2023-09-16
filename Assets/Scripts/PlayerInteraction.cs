@@ -60,7 +60,7 @@ public class PlayerInteraction : MonoBehaviour
         return null;
     }
 
-    private void OnDrawGizmos()
+    private void OnDrawGizmosSelected()
     {
         Gizmos.DrawWireSphere(transform.position, _interactRadius);
     }

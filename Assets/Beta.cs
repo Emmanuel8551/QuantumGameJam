@@ -6,19 +6,19 @@ using UnityEngine.SceneManagement;
 
 public class Beta : MonoBehaviour
 {
-    private static float Musica = 1f, Efectos = 1f;
+    private static float MusicVolume = 1f, Efectos = 1f;
     public Slider musicVolume, effectsVolume;
     public AudioSource audioSource;
 
     public void setMusica()
     {
-        Musica = musicVolume.value;
-        audioSource.volume = Musica;
+        MusicVolume = musicVolume.value;
+        audioSource.volume = MusicVolume;
     }
 
-    public static float getMusica()
+    public static float getMusicVolume()
     {
-        return Musica;
+        return MusicVolume;
     }
 
     public void setEfectos()
@@ -34,7 +34,7 @@ public class Beta : MonoBehaviour
     void Start()
     {
         audioSource.Play();
-        audioSource.volume = Musica;
+        audioSource.volume = MusicVolume;
     }
 
 }
