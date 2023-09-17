@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class Door : MonoBehaviour
@@ -11,6 +12,9 @@ public class Door : MonoBehaviour
     [SerializeField] private LayerMask _targetMask;
     [SerializeField] private int _doorIndex;
     [SerializeField] private int _targetIndex;
+    [SerializeField] private Vector3 _spawnPoint;
+
+    public Vector3 SpawnPoint { get => _spawnPoint; set => _spawnPoint = value; }
 
     private void OnEnable()
     {
@@ -30,20 +34,23 @@ public class Door : MonoBehaviour
             if (hit.collider.gameObject.TryGetComponent(out Player player))
             {
                 LevelLoader.Instance.ChangeRoomPair(nextRoomIndex);
-                Door targetDoor = Doors.Find(d => d._doorIndex == _targetIndex);
+                Door targetDoor = Doors.Find(d => d._doorIndex == _targetIndex && d.transform.position.x * transform.position.x > 0);
                 if (targetDoor != null)
                 {
-                    Vector3 diff = targetDoor.transform.position - player.transform.position;
+                    Vector3 diff = targetDoor.transform.position + targetDoor.SpawnPoint - player.transform.position;
                     Player.PlayerPast.transform.position += diff;
                     Player.PlayerFuture.transform.position += diff;
                 }
-
             }
         }
     }
 
-    private void OnDrawGizmosSelected()
+#if UNITY_EDITOR
+    private void OnDrawGizmos()
     {
+        _spawnPoint = Handles.FreeMoveHandle(transform.position + _spawnPoint, Quaternion.identity, 0.2f, Vector3.one * 0.1f, Handles.CylinderHandleCap) - transform.position;
         Gizmos.DrawWireSphere(transform.position, _detectRadius);
     }
+#endif
+
 }

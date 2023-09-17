@@ -232,6 +232,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7914463700121325526}
   - component: {fileID: 5252728080580066450}
+  - component: {fileID: 1237515781812670205}
   m_Layer: 0
   m_Name: Chair - Bench 2 - Dark (1)
   m_TagString: Untagged
@@ -306,6 +307,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1237515781812670205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146105578987440636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db91b5bb0fef0bc47845f0982931b73e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextRoomIndex: 2
+  _detectRadius: 0.34
+  _targetMask:
+    serializedVersion: 2
+    m_Bits: 128
+  _doorIndex: 12
+  _targetIndex: 30
+  _spawnPoint: {x: -0.32999992, y: 1.71, z: 0}
 --- !u!1 &1549192899095969733
 GameObject:
   m_ObjectHideFlags: 0
@@ -639,12 +660,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextRoomIndex: 1
-  _detectRadius: 0.7
+  _detectRadius: 0.34
   _targetMask:
     serializedVersion: 2
     m_Bits: 128
   _doorIndex: 10
   _targetIndex: 20
+  _spawnPoint: {x: -1.3899999, y: 0, z: 0}
 --- !u!1 &6008225085305864694
 GameObject:
   m_ObjectHideFlags: 0
@@ -743,12 +765,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextRoomIndex: 1
-  _detectRadius: 0.82
+  _detectRadius: 0.34
   _targetMask:
     serializedVersion: 2
     m_Bits: 128
   _doorIndex: 11
   _targetIndex: 20
+  _spawnPoint: {x: 0, y: 1.51, z: 0}
 --- !u!1 &8420102654585423951
 GameObject:
   m_ObjectHideFlags: 0
