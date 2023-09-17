@@ -44,6 +44,7 @@ public class Item : MonoBehaviour, Interactable
 
     public void UnHighlight ()
     {
+        if (_sr != null)
         _sr.color = Color.white;
     }
 
