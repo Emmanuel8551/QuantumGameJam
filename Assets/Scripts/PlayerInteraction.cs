@@ -12,7 +12,6 @@ public class PlayerInteraction : MonoBehaviour
     private Player _player;
     private bool _isInteracting;
     private Interactable interactable;
-    [SerializeField] private GameObject future, past;
 
 
     private void Start()
@@ -23,29 +22,32 @@ public class PlayerInteraction : MonoBehaviour
     private void Update()
     {
 
-        Interactable aux = GetInteractedObject();
-        if (aux != interactable)
+        interactable = GetInteractedObject();
+        if (interactable != null && !DialogManager.runningDialog)
         {
-            interactable = aux;
-
-            if (interactable != null)
-            {
-                _lastInteractable = interactable;
-                interactable.Highlight();
-                _isInteracting = true;
-            }
-            else
-            {
-                _isInteracting = false;
-                _lastInteractable?.UnHighlight();
-            }
-
-            _interactKeyIcon.SetActive(_isInteracting);
+            _lastInteractable = interactable;
+            interactable.Highlight();
+            _isInteracting = true;
+        }
+        else
+        {
+            _isInteracting = false;
+            _lastInteractable?.UnHighlight();
         }
 
-        if (Input.GetKeyDown(KeyCode.E))
+        _interactKeyIcon.SetActive(_isInteracting);
+    }
+
+    public bool UseInteractable()
+    {
+        if (interactable!=null)
         {
-            interactable?.Interact();
+            interactable.Interact();
+            return true;
+        }
+        else
+        {
+            return false;
         }
     }
     

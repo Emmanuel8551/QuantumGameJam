@@ -1420,6 +1420,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1227114091 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1379467574047271240, guid: ec844187ee3904743baaed2402bf98eb, type: 3}
+  m_PrefabInstance: {fileID: 968492562}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1237468469
 GameObject:
   m_ObjectHideFlags: 0
@@ -1482,6 +1487,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panelPast: {fileID: 32238638}
   panelFuture: {fileID: 2103051195}
+  playerPast: {fileID: 1630286684}
+  playerFuture: {fileID: 1227114091}
 --- !u!1 &1315714458
 GameObject:
   m_ObjectHideFlags: 0
@@ -1748,6 +1755,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1630286684 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1379467574047271240, guid: ec844187ee3904743baaed2402bf98eb, type: 3}
+  m_PrefabInstance: {fileID: 1379467574516933901}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1751907116
 GameObject:
   m_ObjectHideFlags: 0
