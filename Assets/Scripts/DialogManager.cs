@@ -44,15 +44,15 @@ public class DialogManager : MonoBehaviour
         }
     }
 
-    public void SetDialogos(bool izq, string[] dialogos)
+    public void SetDialogos(bool izq, string[] dialogos, int paso)
     {
         if(izq == true)
         {
-            panelPast.GetComponent<Dialog>().SetDialogos(dialogos);
+            panelPast.GetComponent<Dialog>().SetDialogos(dialogos, paso);
         }
         else
         {
-            panelFuture.GetComponent<Dialog>().SetDialogos(dialogos);
+            panelFuture.GetComponent<Dialog>().SetDialogos(dialogos, paso);
         }
     }
 

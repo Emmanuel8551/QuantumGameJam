@@ -30,10 +30,8 @@ public class LevelLoader : MonoBehaviour
         RoomEntry entry = entries[roomIndex];
         GameObject prefabPast = entry.roomPast;
         GameObject prefabFuture = entry.roomFuture;
-        Debug.Log(prefabPast);
         roomFuture.LoadRoomPrefab(prefabFuture);
         roomPast.LoadRoomPrefab(prefabPast);
-        Debug.Log(prefabPast);
     }
 }
 

@@ -47,7 +47,6 @@ public class PlayerInteraction : MonoBehaviour
         RaycastHit2D hit = Physics2D.CircleCast(transform.position, _interactRadius, Vector2.zero, 0, _layerMask);
         if (hit.collider != null)
         {
-            Debug.Log(hit.collider.gameObject);
             if (hit.collider.gameObject.TryGetComponent(out Interactable interactable))
             {
                 return interactable;       

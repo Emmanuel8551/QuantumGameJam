@@ -9,6 +9,7 @@ public class Dialog : MonoBehaviour
     private string _targetText;
     private float _charCount;
     private List<string> Dialogos = new();
+    private int paso;
 
     public void SetTextMessage()
     {
@@ -53,17 +54,20 @@ public class Dialog : MonoBehaviour
         txtMessage.text = _targetText;
     }
 
-    public void SetDialogos(string[] dialogos)
+    public void SetDialogos(string[] dialogos, int paso)
     {
-        if (dialogos != null)
-        {
-            Dialogos.Clear();
-            for (int i = 0; i < dialogos.Length; i++)
+        if (!gameObject.activeSelf || (gameObject.activeSelf && this.paso != paso)) {
+            this.paso = paso;
+            if (dialogos != null)
             {
-                Dialogos.Add(dialogos[i]);
+                Dialogos.Clear();
+                for (int i = 0; i < dialogos.Length; i++)
+                {
+                    Dialogos.Add(dialogos[i]);
+                }
             }
+            ShowText();
         }
-        ShowText();
     }
     
     public void ShowText()
