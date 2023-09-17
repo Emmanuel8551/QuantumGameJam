@@ -4,24 +4,25 @@ using UnityEngine;
 
 public class PlayerMovementSwitcher : MonoBehaviour
 {
-    [SerializeField] private Player playerPast;
-    [SerializeField] private Player playerFuture;
-    public AudioSource future, past;
-    private float musicCrossfade;
-    private float targetCrossfade;
+    //[SerializeField] private Player playerPast;
+    //[SerializeField] private Player playerFuture;
+    public AudioSource future; //, past;
+    //private float musicCrossfade;
+    //private float targetCrossfade;
 
-    private const float FUTURE_CROSSFADE = 1;
-    private const float PAST_CROSSFADE = 0;
+    //private const float FUTURE_CROSSFADE = 1;
+    //private const float PAST_CROSSFADE = 0;
 
     private void Start()
     {
-        musicCrossfade = FUTURE_CROSSFADE;
+        //musicCrossfade = FUTURE_CROSSFADE;
+        //future.Play();
+        //past.Play();
+        future.volume = Beta.getMusicVolume();
         future.Play();
-        past.Play();
-        PlayFuture();
     }
 
-    void Update()
+    /*void Update()
     {
         musicCrossfade = Mathf.Lerp(musicCrossfade, targetCrossfade, 0.015f);
 
@@ -59,6 +60,6 @@ public class PlayerMovementSwitcher : MonoBehaviour
     private void PlayPast()
     {
         targetCrossfade = PAST_CROSSFADE;
-    }
+    }*/
 
 }
