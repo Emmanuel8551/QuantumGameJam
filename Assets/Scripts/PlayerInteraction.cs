@@ -42,17 +42,9 @@ public class PlayerInteraction : MonoBehaviour
     {
         if (interactable!=null)
         {
-            GameObject go = (interactable as Item).gameObject;
-            if (go.name== "Bed - Pattern 1.d")
-            {
-                Fader.Instance.FadeIn();
-                return false;
-            }
-            else
-            {
-                interactable.Interact();
-                return true;
-            }
+            interactable.Interact();
+            return true;
+            
         }
         else
         {
