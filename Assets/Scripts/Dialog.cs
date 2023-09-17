@@ -77,6 +77,10 @@ public class Dialog : MonoBehaviour
         if (Dialogos.Count > 0)
         {
             text = Dialogos[0];
+            if (text == "[END]")
+            {
+                LevelLoader.Instance.LoadLevel(LevelLoader.Nivel + 1);
+            }
             Dialogos.RemoveAt(0);
         }
         else

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Item : MonoBehaviour, Interactable
 {
-    private static int Progreso;
+    private static int Progreso=0;
 
     public int[] niveles;
     public string[] Antes;
@@ -18,7 +18,7 @@ public class Item : MonoBehaviour, Interactable
     {
         if (niveles.Length==0 || Includes(niveles, LevelLoader.Nivel))
         {
-            Progreso = 0; //mover
+            Debug.Log("Mensaje relleno. No borrar");
         }
         else
         {
@@ -51,7 +51,7 @@ public class Item : MonoBehaviour, Interactable
             diag = ref Despues;
         }
         DialogManager.Instance.SetDialogos((transform.position.x <= 0) ? true : false, diag, paso);
-        if (paso == Progreso)
+        if (gameObject.name== "Wallet")
         {
             Progreso += 1;
         }

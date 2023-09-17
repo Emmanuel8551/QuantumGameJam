@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 612561110277394708}
   - component: {fileID: 5813714303101848527}
   m_Layer: 8
-  m_Name: Wallet
+  m_Name: Walle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -99,10 +99,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   niveles: 01000000
-  Antes: []
-  paso: 0
+  Antes:
+  - "Albert: Where's my wallet? If I don't find it I will arrive late to work\u2026"
+  paso: 1
   Despues:
-  - "Albert: Donde esta mi billetera?, Si no la encuentro voy a llegar tarde\u2026"
+  - "Albert: There's nothing here\u2026"
 --- !u!58 &5813714303101848527
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -132,7 +133,7 @@ GameObject:
   - component: {fileID: 216448374409482715}
   - component: {fileID: 7521772888918723265}
   m_Layer: 8
-  m_Name: Wallet (1)
+  m_Name: Wallete
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -220,8 +221,7 @@ MonoBehaviour:
   niveles: 02000000
   Antes: []
   paso: 0
-  Despues:
-  - "Albert: Aqui esta mi billetera, menos mal a\xFAn estoy a tiempo para ir al trabajo"
+  Despues: []
 --- !u!58 &7521772888918723265
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -369,7 +369,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4165394907136630693, guid: 3190b84123de5694eab0807ca1afb7dd, type: 3}
       propertyPath: Despues.Array.data[0]
-      value: 'Albert: *Acariciar* '
+      value: 'Albert: *Caresses* '
       objectReference: {fileID: 0}
     - target: {fileID: 4165394907136630693, guid: 3190b84123de5694eab0807ca1afb7dd, type: 3}
       propertyPath: Despues.Array.data[1]
@@ -450,7 +450,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4389613053100925541, guid: ad4b9c811844729439aad21c07d0ccff, type: 3}
       propertyPath: Despues.Array.data[0]
-      value: "Robert: No hay nada aqu\xED\u2026"
+      value: "Robert: There's nothing here\u2026"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad4b9c811844729439aad21c07d0ccff, type: 3}

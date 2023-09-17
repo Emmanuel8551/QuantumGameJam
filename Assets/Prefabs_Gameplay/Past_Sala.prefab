@@ -102,7 +102,9 @@ MonoBehaviour:
   Antes: []
   paso: 0
   Despues:
-  - "Albert: Aqui esta mi billetera, menos mal a\xFAn estoy a tiempo para ir al trabajo"
+  - 'Albert: I finally found my wallet! Time to go to work'
+  - (After going to work)
+  - 'Albert: I''m too tired. Time to sleep'
 --- !u!58 &2935801275025631568
 CircleCollider2D:
   m_ObjectHideFlags: 0

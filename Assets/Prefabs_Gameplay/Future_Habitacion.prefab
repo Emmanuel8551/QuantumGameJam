@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7616166994569067164}
   - component: {fileID: 1692668706007926170}
   m_Layer: 8
-  m_Name: Wallet
+  m_Name: Wallete
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -102,9 +102,9 @@ MonoBehaviour:
   Antes: []
   paso: 0
   Despues:
-  - "Albert: Ah, mi billetera, ahora que recuerdo el d\xEDa de ayer llegu\xE9 tarde
-    porque no la encontraba"
-  - "Albert: \xBFd\xF3nde la encontr\xE9?"
+  - 'Albert: Oh, my wallet, now that I remember yesterday I arrived late to work
+    because I couldn''t find it'
+  - 'Albert: Where did I find it?'
 --- !u!58 &1692668706007926170
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -187,6 +187,10 @@ PrefabInstance:
     - target: {fileID: 2885860581670790027, guid: ad4b9c811844729439aad21c07d0ccff, type: 3}
       propertyPath: m_Name
       value: Amonestacion
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389613053100925541, guid: ad4b9c811844729439aad21c07d0ccff, type: 3}
+      propertyPath: Despues.Array.data[0]
+      value: 'Robert: Damn, one more admonition and I will get fired'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad4b9c811844729439aad21c07d0ccff, type: 3}
@@ -303,10 +307,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   niveles: 
-  Antes: []
-  paso: 0
+  Antes:
+  - Why would I sleep?
+  paso: 1
   Despues:
-  - "Robert: Deber\xEDa terminar mi dia?"
+  - Finally...
+  - '[END]'
 --- !u!4 &6205713158854559397 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7869657489491787910, guid: 5ec16374fac39164e876ad6d68a0c6a5, type: 3}
@@ -368,32 +374,64 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4165394907136630693, guid: 3190b84123de5694eab0807ca1afb7dd, type: 3}
-      propertyPath: Despues.Array.size
+      propertyPath: paso
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4165394907136630693, guid: 3190b84123de5694eab0807ca1afb7dd, type: 3}
+      propertyPath: Antes.Array.size
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4165394907136630693, guid: 3190b84123de5694eab0807ca1afb7dd, type: 3}
-      propertyPath: Despues.Array.data[0]
-      value: "Albert: Buenos d\xEDas Lyn, \xBFc\xF3mo amaneciste?"
+      propertyPath: Despues.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4165394907136630693, guid: 3190b84123de5694eab0807ca1afb7dd, type: 3}
-      propertyPath: Despues.Array.data[1]
+      propertyPath: Antes.Array.data[0]
+      value: "Albert: Good morning Lyn, \xBFhow did you wake up?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4165394907136630693, guid: 3190b84123de5694eab0807ca1afb7dd, type: 3}
+      propertyPath: Antes.Array.data[1]
       value: "Schr\xF6dinger: ...ZzZ\u2026Prrrr"
       objectReference: {fileID: 0}
     - target: {fileID: 4165394907136630693, guid: 3190b84123de5694eab0807ca1afb7dd, type: 3}
-      propertyPath: Despues.Array.data[2]
-      value: "Albert: \xBFTe gust\xF3 la pel\xEDcula que vimos el jueves?"
+      propertyPath: Antes.Array.data[2]
+      value: "Albert: \xBFDid you enjoy the move we saw on Thursday?"
       objectReference: {fileID: 0}
     - target: {fileID: 4165394907136630693, guid: 3190b84123de5694eab0807ca1afb7dd, type: 3}
-      propertyPath: Despues.Array.data[3]
+      propertyPath: Antes.Array.data[3]
       value: "Schr\xF6dinger: miau\u2026"
       objectReference: {fileID: 0}
     - target: {fileID: 4165394907136630693, guid: 3190b84123de5694eab0807ca1afb7dd, type: 3}
-      propertyPath: Despues.Array.data[4]
+      propertyPath: Antes.Array.data[4]
       value: 'Albert: ...'
       objectReference: {fileID: 0}
     - target: {fileID: 4165394907136630693, guid: 3190b84123de5694eab0807ca1afb7dd, type: 3}
+      propertyPath: Antes.Array.data[5]
+      value: 'Albert: I guess I will go watch TV in the living room'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4165394907136630693, guid: 3190b84123de5694eab0807ca1afb7dd, type: 3}
+      propertyPath: Despues.Array.data[0]
+      value: 'Albert: *Caresses*'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4165394907136630693, guid: 3190b84123de5694eab0807ca1afb7dd, type: 3}
+      propertyPath: Despues.Array.data[1]
+      value: "Schr\xF6dinger: Prrrr\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4165394907136630693, guid: 3190b84123de5694eab0807ca1afb7dd, type: 3}
+      propertyPath: Despues.Array.data[2]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4165394907136630693, guid: 3190b84123de5694eab0807ca1afb7dd, type: 3}
+      propertyPath: Despues.Array.data[3]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4165394907136630693, guid: 3190b84123de5694eab0807ca1afb7dd, type: 3}
+      propertyPath: Despues.Array.data[4]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4165394907136630693, guid: 3190b84123de5694eab0807ca1afb7dd, type: 3}
       propertyPath: Despues.Array.data[5]
-      value: "Albert: supongo que ir\xE9 a ver tele en la sala"
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3190b84123de5694eab0807ca1afb7dd, type: 3}
