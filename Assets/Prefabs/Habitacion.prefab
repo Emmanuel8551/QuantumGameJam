@@ -470,6 +470,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5906109296503019232}
   - component: {fileID: 1118528798033900569}
+  - component: {fileID: 3362518464154725328}
   m_Layer: 0
   m_Name: Chair - Bench 2 - Dark
   m_TagString: Untagged
@@ -544,6 +545,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &3362518464154725328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4748505298957404402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db91b5bb0fef0bc47845f0982931b73e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextRoomIndex: 1
+  _detectRadius: 0.7
+  _targetMask:
+    serializedVersion: 2
+    m_Bits: 128
+  _doorIndex: 10
+  _targetIndex: 20
 --- !u!1 &6008225085305864694
 GameObject:
   m_ObjectHideFlags: 0
@@ -554,6 +574,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3862389635130179544}
   - component: {fileID: 1561703380306529089}
+  - component: {fileID: 4588494924342530931}
   m_Layer: 0
   m_Name: Feature - Telescope - Ladder - Light
   m_TagString: Untagged
@@ -628,6 +649,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &4588494924342530931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6008225085305864694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db91b5bb0fef0bc47845f0982931b73e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextRoomIndex: 1
+  _detectRadius: 0.82
+  _targetMask:
+    serializedVersion: 2
+    m_Bits: 128
+  _doorIndex: 11
+  _targetIndex: 20
 --- !u!1 &8420102654585423951
 GameObject:
   m_ObjectHideFlags: 0
