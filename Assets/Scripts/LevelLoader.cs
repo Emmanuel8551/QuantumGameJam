@@ -20,9 +20,10 @@ public class LevelLoader : MonoBehaviour
         ChangeRoomPair(0);
     }
 
-    public void LoadLevel ()
+    public void LoadLevel (int level)
     {
-        
+        Nivel = level;
+        ChangeRoomPair(0);
     }
 
     public void ChangeRoomPair (int roomIndex)
