@@ -18,6 +18,7 @@ public class PlayerMovementSwitcher : MonoBehaviour
         //musicCrossfade = FUTURE_CROSSFADE;
         //future.Play();
         //past.Play();
+        future.volume = Beta.getMusicVolume();
         future.Play();
     }
 
