@@ -44,7 +44,7 @@ public class PlayerInteraction : MonoBehaviour
         {
             interactable.Interact();
             return true;
-            //GameObject go = (interactable as Item).gameObject;
+            
         }
         else
         {

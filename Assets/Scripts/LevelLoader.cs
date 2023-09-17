@@ -22,8 +22,9 @@ public class LevelLoader : MonoBehaviour
 
     public void LoadLevel (int level)
     {
-        Nivel = level;
-        ChangeRoomPair(0);
+        //Nivel = level;
+        //ChangeRoomPair(0);
+        Fader.Instance.FadeIn();
     }
 
     public void ChangeRoomPair (int roomIndex)
