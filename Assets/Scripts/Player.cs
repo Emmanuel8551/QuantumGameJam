@@ -4,9 +4,15 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    //[SerializeField] private bool _isControlling;
+    public static Player PlayerPast;
+    public static Player PlayerFuture;
 
-    //public bool IsControlling { get => _isControlling; set => _isControlling = value; }
+    private void OnEnable()
+    {
+        if (transform.position.x < 0) PlayerPast = this;
+        else PlayerFuture = this;
+    }
+
     public bool IsWalking { get; set; }
     public Vector2 MoveDir { get; set; }
 }

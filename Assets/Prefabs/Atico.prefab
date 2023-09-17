@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5591251251458462133}
   - component: {fileID: 2910277237396863954}
+  - component: {fileID: 2257975494205602140}
   m_Layer: 0
   m_Name: escalera
   m_TagString: Untagged
@@ -84,6 +85,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2257975494205602140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 145236487931652389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db91b5bb0fef0bc47845f0982931b73e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextRoomIndex: 0
+  _detectRadius: 0.68
+  _targetMask:
+    serializedVersion: 2
+    m_Bits: 0
+  _doorIndex: 20
+  _targetIndex: 11
 --- !u!1 &3097888459188019441
 GameObject:
   m_ObjectHideFlags: 0
