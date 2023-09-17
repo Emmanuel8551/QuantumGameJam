@@ -40,7 +40,7 @@ public class PlayerInteraction : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.E))
             {
-                interactable.Interact();
+                interactable?.Interact();
             }
         }
 

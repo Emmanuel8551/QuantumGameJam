@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Interactable : MonoBehaviour
+public class Item : MonoBehaviour, Interactable
 {
     [SerializeField] private SpriteRenderer _sr;
     public string[] Dialogos;
@@ -21,4 +21,13 @@ public class Interactable : MonoBehaviour
     {
         _sr.color = Color.white;
     }
+}
+
+public interface Interactable
+{
+    public void Interact();
+
+    public void Highlight();
+
+    public void UnHighlight();
 }
