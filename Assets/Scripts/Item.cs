@@ -5,7 +5,8 @@ using UnityEngine;
 public class Item : MonoBehaviour, Interactable
 {
     private static int Progreso;
-    
+
+    public int[] niveles;
     public string[] Antes;
     public int paso;
     public string[] Despues;
@@ -13,9 +14,28 @@ public class Item : MonoBehaviour, Interactable
     private SpriteRenderer _sr;
 
 
-    static void Start()
+    void Start()
     {
-        Progreso = 0;
+        if (niveles.Length==0 || Includes(niveles, LevelLoader.Nivel))
+        {
+            Progreso = 0; //mover
+        }
+        else
+        {
+            gameObject.SetActive(false);
+        }
+    }
+
+    private bool Includes(int[] niveles, int Nivel)
+    {
+        for (int i = 0; i < niveles.Length; i++)
+        {
+            if (niveles[i] == Nivel)
+            {
+                return true;
+            }
+        }
+        return false;
     }
     
     void Awake()
