@@ -7,7 +7,7 @@ public class Item : MonoBehaviour, Interactable
     private static int Progreso;
     
     public string[] Antes;
-    private int paso;
+    public int paso;
     public string[] Despues;
 
     private SpriteRenderer _sr;
