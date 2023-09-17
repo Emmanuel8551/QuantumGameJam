@@ -50,7 +50,7 @@ public class Item : MonoBehaviour, Interactable
         {
             diag = ref Despues;
         }
-        DialogManager.Instance.SetDialogos((transform.position.x <= 0)?true:false, diag, paso);
+        DialogManager.Instance.SetDialogos((transform.position.x <= 0) ? true : false, diag, paso);
         if (paso == Progreso)
         {
             Progreso += 1;

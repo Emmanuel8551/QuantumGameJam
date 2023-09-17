@@ -42,8 +42,17 @@ public class PlayerInteraction : MonoBehaviour
     {
         if (interactable!=null)
         {
-            interactable.Interact();
-            return true;
+            GameObject go = (interactable as Item).gameObject;
+            if (go.name== "Bed - Pattern 1.d")
+            {
+                LevelLoader.Instance.LoadLevel(LevelLoader.Nivel + 1);
+                return false;
+            }
+            else
+            {
+                interactable.Interact();
+                return true;
+            }
         }
         else
         {
