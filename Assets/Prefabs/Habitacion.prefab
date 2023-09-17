@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7961324860884523251}
   - component: {fileID: 5379467422528280435}
+  - component: {fileID: 7435058479945123119}
   m_Layer: 0
   m_Name: Storage - Bookshelf 1.a - Dark
   m_TagString: Untagged
@@ -25,8 +26,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 121384276982993786}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.77999973, y: 2.98, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.77999973, y: 3.0294, z: 0}
+  m_LocalScale: {x: 1, y: 0.8773, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7869657489491787910}
@@ -84,6 +85,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &7435058479945123119
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 121384276982993786}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.33763877}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.62, y: 0.805}
+    newSize: {x: 1.62, y: 0.805}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.62, y: 0.12972254}
+  m_EdgeRadius: 0
 --- !u!1 &870316026719649569
 GameObject:
   m_ObjectHideFlags: 0
@@ -94,6 +121,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6416609828550888185}
   - component: {fileID: 7372659719410996271}
+  - component: {fileID: 3600516394688931779}
   m_Layer: 0
   m_Name: Storage - Dresser 2 - Dark
   m_TagString: Untagged
@@ -109,8 +137,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 870316026719649569}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -3.0900002, y: -2.01, z: 0}
-  m_LocalScale: {x: 1.3999997, y: 1.3999997, z: 1.4}
+  m_LocalPosition: {x: -3.1558, y: -2.01, z: 0}
+  m_LocalScale: {x: 1.3999997, y: 1.1806197, z: 1.4}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 7869657489491787910}
@@ -168,6 +196,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &3600516394688931779
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 870316026719649569}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.43491232, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.395, y: 0.6}
+    newSize: {x: 2.79, y: 1.2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.52517533, y: 0.6}
+  m_EdgeRadius: 0
 --- !u!1 &1146105578987440636
 GameObject:
   m_ObjectHideFlags: 0
@@ -262,6 +316,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2101215702572025611}
   - component: {fileID: 1722218073781586712}
+  - component: {fileID: 7945531046558777360}
   m_Layer: 0
   m_Name: Table - Writing desk - Dark
   m_TagString: Untagged
@@ -336,6 +391,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &7945531046558777360
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549192899095969733}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.40392327, y: 0.029920101}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.55, y: 0.86}
+    newSize: {x: 1.55, y: 0.86}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.7421534, y: 0.68047845}
+  m_EdgeRadius: 0
 --- !u!1 &1735795684519084586
 GameObject:
   m_ObjectHideFlags: 0
@@ -762,6 +843,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7739382252202635835}
   - component: {fileID: 2683580515628623725}
+  - component: {fileID: 1029097137186658902}
   m_Layer: 0
   m_Name: Bed - Pattern 1.d
   m_TagString: Untagged
@@ -836,3 +918,29 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1029097137186658902
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8909157000821209529}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.032912314, y: 0.6582453}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.01, y: 2.895}
+    newSize: {x: 2.01, y: 2.895}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.5492281, y: 1.1177378}
+  m_EdgeRadius: 0

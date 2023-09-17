@@ -198,6 +198,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8171551729065082411}
   - component: {fileID: 5084136897226266801}
+  - component: {fileID: 1918583495031420094}
   m_Layer: 0
   m_Name: Feature - Billiards table
   m_TagString: Untagged
@@ -272,6 +273,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1918583495031420094
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3380611136933121941}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.1085695, y: 0.71345687}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.845, y: 3.195}
+    newSize: {x: 1.845, y: 3.195}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.627861, y: 1.7680862}
+  m_EdgeRadius: 0
 --- !u!1 &3594337300696701655
 GameObject:
   m_ObjectHideFlags: 0
@@ -366,6 +393,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5881163744708310593}
   - component: {fileID: 4684351349474315257}
+  - component: {fileID: 8171204858074862030}
   m_Layer: 0
   m_Name: Clutter - Globe
   m_TagString: Untagged
@@ -440,6 +468,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &8171204858074862030
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3714904134938957199}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.32168752}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.59, y: 0.69}
+    newSize: {x: 1.18, y: 1.38}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.59, y: 0.04662493}
+  m_EdgeRadius: 0
 --- !u!1 &4073714723106910006
 GameObject:
   m_ObjectHideFlags: 0
@@ -914,6 +968,7 @@ GameObject:
   m_Component:
   - component: {fileID: 574167055909877167}
   - component: {fileID: 4604742317275581459}
+  - component: {fileID: 4132129851821896688}
   m_Layer: 0
   m_Name: Feature - Piano 2.b
   m_TagString: Untagged
@@ -988,6 +1043,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &4132129851821896688
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8957170680130806585}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.6203973}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.92, y: 2.555}
+    newSize: {x: 3.84, y: 5.11}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.92, y: 1.3142052}
+  m_EdgeRadius: 0
 --- !u!1 &9004927710948151769
 GameObject:
   m_ObjectHideFlags: 0
@@ -998,6 +1079,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5387843665183001597}
   - component: {fileID: 4311771524434747361}
+  - component: {fileID: 390493839726935591}
   m_Layer: 0
   m_Name: Clutter - Pumpkin - Jack-o-lantern
   m_TagString: Untagged
@@ -1072,6 +1154,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &390493839726935591
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9004927710948151769}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.29011393}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.645, y: 0.635}
+    newSize: {x: 0.645, y: 0.635}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.645, y: 0.05477217}
+  m_EdgeRadius: 0
 --- !u!1 &9170848520774396120
 GameObject:
   m_ObjectHideFlags: 0

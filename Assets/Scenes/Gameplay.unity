@@ -456,7 +456,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Antes:
   - Falta el 2do
-  paso: 2
   Despues:
   - 3ro completado
   - Never Gonna Give You Up
@@ -1060,7 +1059,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Antes: []
-  paso: 0
   Despues:
   - 1ro completado
 --- !u!58 &488183142
@@ -1311,6 +1309,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 906367129}
     m_Modifications:
+    - target: {fileID: -7595610962146816052, guid: ec844187ee3904743baaed2402bf98eb, type: 3}
+      propertyPath: past
+      value: 
+      objectReference: {fileID: 32238638}
+    - target: {fileID: -7595610962146816052, guid: ec844187ee3904743baaed2402bf98eb, type: 3}
+      propertyPath: future
+      value: 
+      objectReference: {fileID: 2103051195}
     - target: {fileID: 1379467574047271237, guid: ec844187ee3904743baaed2402bf98eb, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1580,7 +1586,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Antes:
   - Falta el 1ro
-  paso: 1
   Despues:
   - 2do completado
 --- !u!58 &1133934837
@@ -2284,7 +2289,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Antes:
   - "Todav\xEDa no"
-  paso: 3
   Despues:
   - Completado
   - Este mensaje es muy largo para ver si pasa algo cuando los mensajes son muy largos
@@ -2852,6 +2856,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1083406167}
     m_Modifications:
+    - target: {fileID: -7595610962146816052, guid: ec844187ee3904743baaed2402bf98eb, type: 3}
+      propertyPath: past
+      value: 
+      objectReference: {fileID: 32238638}
+    - target: {fileID: -7595610962146816052, guid: ec844187ee3904743baaed2402bf98eb, type: 3}
+      propertyPath: future
+      value: 
+      objectReference: {fileID: 2103051195}
     - target: {fileID: 1379467574047271237, guid: ec844187ee3904743baaed2402bf98eb, type: 3}
       propertyPath: m_RootOrder
       value: 0

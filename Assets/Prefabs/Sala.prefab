@@ -556,6 +556,7 @@ GameObject:
   m_Component:
   - component: {fileID: 48365205833754718}
   - component: {fileID: 7648464184975308205}
+  - component: {fileID: 7588384550592164269}
   m_Layer: 0
   m_Name: Storage - Bookshelf 2 - Dark
   m_TagString: Untagged
@@ -630,6 +631,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &7588384550592164269
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7998568039371298179}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.4373823, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.59, y: 0.695}
+    newSize: {x: 3.18, y: 1.39}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.71523553, y: 0.695}
+  m_EdgeRadius: 0
 --- !u!1 &8168076142770889944
 GameObject:
   m_ObjectHideFlags: 0
@@ -892,6 +919,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6644756960367103622}
   - component: {fileID: 845799613070742209}
+  - component: {fileID: 6255537471293816223}
   m_Layer: 0
   m_Name: Chair - Sofa 1.a
   m_TagString: Untagged
@@ -966,3 +994,29 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &6255537471293816223
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8880604284091856986}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.618767, y: -0.016723454}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.38, y: 2.01}
+    newSize: {x: 6.76, y: 4.02}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.4066348, y: 0.97314703}
+  m_EdgeRadius: 0

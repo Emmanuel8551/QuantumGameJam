@@ -11,6 +11,8 @@ public class PlayerInteraction : MonoBehaviour
     private Interactable _lastInteractable;
     private Player _player;
     private bool _isInteracting;
+    private Interactable interactable;
+    [SerializeField] private GameObject future, past;
 
 
     private void Start()
@@ -21,27 +23,32 @@ public class PlayerInteraction : MonoBehaviour
     private void Update()
     {
 
-        Interactable interactable = GetInteractedObject();
-        if (interactable != null)
+        Interactable aux = GetInteractedObject();
+        if (aux != interactable)
         {
-            _lastInteractable = interactable;
-            interactable.Highlight();
-            _isInteracting = true;
-        }
-        else
-        {
-            _isInteracting = false;
-            _lastInteractable?.UnHighlight();
+            interactable = aux;
+
+            if (interactable != null)
+            {
+                _lastInteractable = interactable;
+                interactable.Highlight();
+                _isInteracting = true;
+            }
+            else
+            {
+                _isInteracting = false;
+                _lastInteractable?.UnHighlight();
+            }
+
+            _interactKeyIcon.SetActive(_isInteracting);
         }
 
         if (Input.GetKeyDown(KeyCode.E))
         {
             interactable?.Interact();
         }
-
-        _interactKeyIcon.SetActive(_isInteracting);
     }
-
+    
     private Interactable GetInteractedObject ()
     {
         RaycastHit2D hit = Physics2D.CircleCast(transform.position, _interactRadius, Vector2.zero, 0, _layerMask);
