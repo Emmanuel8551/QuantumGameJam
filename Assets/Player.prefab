@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 1379467574047271242}
   - component: {fileID: 8654538412070880062}
   - component: {fileID: 6607038400836780374}
-  m_Layer: 8
-  m_Name: PlayerPast
+  m_Layer: 7
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -50,7 +50,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93587a8e28ba3134f91fe2fb2ed67bf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _isControlling: 1
 --- !u!114 &-7595610962146816052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65,6 +64,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactRadius: 1
   _interactKeyIcon: {fileID: 4716566933468113442}
+  _layerMask:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!114 &1379467574047271242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -128,7 +130,7 @@ GameObject:
   - component: {fileID: 7677698151110715593}
   - component: {fileID: 274093015163478719}
   - component: {fileID: 3130315152904097356}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: StateCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -229,7 +231,7 @@ GameObject:
   - component: {fileID: 2830740659472551110}
   - component: {fileID: 6426590101582421313}
   - component: {fileID: 4073633529078932535}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: txtState
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -364,7 +366,7 @@ GameObject:
   - component: {fileID: 754417599025362356}
   - component: {fileID: 8442888945869426220}
   - component: {fileID: 2187665747660665739}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: Key
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -498,7 +500,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1785205561687972942}
   - component: {fileID: 2198493353918340742}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: InteractIcon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -546,7 +548,7 @@ GameObject:
   - component: {fileID: 1915439303754162615}
   - component: {fileID: 1782747743533084235}
   - component: {fileID: 3153521028770339196}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -623,7 +625,7 @@ GameObject:
   - component: {fileID: 3201189655691552499}
   - component: {fileID: 1464545524791065580}
   - component: {fileID: 1743473370532498317}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: Visuals
   m_TagString: Untagged
   m_Icon: {fileID: 0}

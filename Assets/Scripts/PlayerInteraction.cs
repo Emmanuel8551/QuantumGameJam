@@ -7,9 +7,11 @@ public class PlayerInteraction : MonoBehaviour
 {
     [SerializeField] private float _interactRadius;
     [SerializeField] private GameObject _interactKeyIcon;
+    [SerializeField] private LayerMask _layerMask;
     private Interactable _lastInteractable;
     private Player _player;
     private bool _isInteracting;
+
 
     private void Start()
     {
@@ -42,9 +44,10 @@ public class PlayerInteraction : MonoBehaviour
 
     private Interactable GetInteractedObject ()
     {
-        RaycastHit2D hit = Physics2D.CircleCast(transform.position, _interactRadius, Vector2.zero);
+        RaycastHit2D hit = Physics2D.CircleCast(transform.position, _interactRadius, Vector2.zero, 0, _layerMask);
         if (hit.collider != null)
         {
+            Debug.Log(hit.collider.gameObject);
             if (hit.collider.gameObject.TryGetComponent(out Interactable interactable))
             {
                 return interactable;       
