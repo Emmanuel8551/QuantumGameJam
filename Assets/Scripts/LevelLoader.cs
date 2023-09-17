@@ -8,6 +8,7 @@ public class LevelLoader : MonoBehaviour
     [SerializeField] private Room roomFuture;
     [SerializeField] private Room roomPast;
     public Level level;
+    public static int Nivel=1;
 
     private void Awake()
     {

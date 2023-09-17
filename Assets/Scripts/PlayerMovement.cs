@@ -56,4 +56,9 @@ public class PlayerMovement : MonoBehaviour
         _player.MoveDir = moveDir;
     }
 
+    public void setSpeed(float n)
+    {
+        _speed = n;
+    }
+
 }
