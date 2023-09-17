@@ -1,88 +1,59 @@
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
+using TMPro;
 
 public class DialogManager : MonoBehaviour
 {
     public static DialogManager Instance { get; private set; }
-    [SerializeField] private TextMeshProUGUI txtMessage;
-    [SerializeField] private GameObject panel;
-    private string _targetText;
-    private float _charCount;
-    private List<string> Dialogos = new();
+    [SerializeField] private GameObject panelPast, panelFuture;
 
-    private void Start()
+    void Awake()
     {
         Instance = this;
+        panelPast.GetComponent<Dialog>().SetTextMessage();
+        panelFuture.GetComponent<Dialog>().SetTextMessage();
     }
 
     private void Update()
     {
-        if (panel.activeSelf)
+        if (Input.GetKeyDown(KeyCode.E))
         {
-            if (txtMessage.text != _targetText)
+            if (isWriting(panelPast) || isWriting(panelFuture))
             {
-                _charCount = Mathf.Min(_charCount + Time.deltaTime * 60, _targetText.Length);
-                txtMessage.text = _targetText.Substring(0, (int)_charCount);
-            }
-
-        }
-
-        if (Input.GetKeyDown(KeyCode.Return))
-        {
-            if(txtMessage.text != _targetText)
-            {
-                txtMessage.text = _targetText;
-            }else if (Dialogos.Count > 0)
-            {
-                ShowText();
+                panelPast.GetComponent<Dialog>().SkipText();
+                panelFuture.GetComponent<Dialog>().SkipText();
             }
             else
             {
-                Hide();
+                panelPast.GetComponent<Dialog>().NextDialog();
+                panelFuture.GetComponent<Dialog>().NextDialog();
             }
         }
     }
 
-    public void ShowText ()
+    private bool isWriting(GameObject panel)
     {
-        txtMessage.text = "";
-        string text;
-        if (Dialogos.Count > 0)
+        if(panel.GetComponent<Dialog>().isWriting())
         {
-            text = Dialogos[0];
-            Dialogos.RemoveAt(0);
+            return true;
         }
         else
         {
-            text = "ERROR. NO HAY TEXTO ASIGNADO";
+            return false;
         }
-        _charCount = 0;
-        Show();
-        _targetText = text+"      ";
     }
 
-    public void Show ()
+    public void SetDialogos(bool izq, string[] dialogos)
     {
-        panel.SetActive (true);
-    }
-
-    public void Hide ()
-    {
-        panel.SetActive(false);
-    }
-
-    public void SetDialogos(string[] dialogos)
-    {
-        if (dialogos != null)
+        if(izq == true)
         {
-            Dialogos.Clear();
-            for(int i = 0; i < dialogos.Length; i++)
-            {
-                Dialogos.Add(dialogos[i]);
-            }
+            panelPast.GetComponent<Dialog>().SetDialogos(dialogos);
         }
-        ShowText();
+        else
+        {
+            panelFuture.GetComponent<Dialog>().SetDialogos(dialogos);
+        }
     }
+
 }

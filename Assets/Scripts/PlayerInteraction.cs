@@ -18,30 +18,29 @@ public class PlayerInteraction : MonoBehaviour
 
     private void Update()
     {
-        if (!_player.IsControlling)
+        /*if (!_player.IsControlling)
         {
             _isInteracting = false;
             _lastInteractable?.UnHighlight();
         }
         else
+        {*/
+        Interactable interactable = GetInteractedObject();
+        if (interactable != null)
         {
-            Interactable interactable = GetInteractedObject();
-            if (interactable != null)
-            {
-                _lastInteractable = interactable;
-                interactable.Highlight();
-                _isInteracting = true;
-            }
-            else
-            {
-                _isInteracting = false;
-                _lastInteractable?.UnHighlight();
-            }
+            _lastInteractable = interactable;
+            interactable.Highlight();
+            _isInteracting = true;
+        }
+        else
+        {
+            _isInteracting = false;
+            _lastInteractable?.UnHighlight();
+        }
 
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                interactable.Interact();
-            }
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            interactable?.Interact();
         }
 
         _interactKeyIcon.SetActive(_isInteracting);

@@ -4,12 +4,37 @@ using UnityEngine;
 
 public class Interactable : MonoBehaviour
 {
-    [SerializeField] private SpriteRenderer _sr;
-    public string[] Dialogos;
+    private static int Progreso;
     
+    public string[] Antes;
+    public int paso;
+    public string[] Despues;
+
+    private SpriteRenderer _sr;
+
+
+    static void Start()
+    {
+        Progreso = 0;
+    }
+    
+    void Awake()
+    {
+        _sr = GetComponent<SpriteRenderer>();
+    }
+
     public void Interact ()
     {
-        DialogManager.Instance.SetDialogos(Dialogos);
+        ref string[] diag = ref Antes;
+        if (Progreso >= paso)
+        {
+            diag = ref Despues;
+        }
+        DialogManager.Instance.SetDialogos((transform.position.x <= 0) ? true : false, diag);
+        if (paso == Progreso)
+        {
+            Progreso += 1;
+        }
     }
 
     public void Highlight ()
@@ -21,4 +46,5 @@ public class Interactable : MonoBehaviour
     {
         _sr.color = Color.white;
     }
+
 }
